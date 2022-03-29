@@ -19,7 +19,11 @@ local options = {
     signcolumn = "number",                   -- replace the number with any signs
     scrolloff = 8,                           -- always buffer cursor at least 8 lines from top or bottom
     sidescrolloff = 8,
+    background = "dark",
 }
+
+vim.g.ayucolor = "dark"
+vim.cmd "colorscheme ayu"
 
 vim.opt.shortmess:append "c"
 

@@ -7,6 +7,7 @@ PS1='[\u@\h \W]\$ '
 # Alias
 alias ls='ls --color=auto'
 alias racket='racket -i -p neil/sicp -l xrepl'
+alias n="nvim"
 
 #Am test
 
