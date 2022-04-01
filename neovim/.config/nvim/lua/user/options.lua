@@ -25,6 +25,7 @@ local options = {
 vim.g.ayucolor = "dark"
 vim.cmd "colorscheme ayu"
 
+vim.indent_blankline_show_first_indent_level = false
 vim.opt.shortmess:append "c"
 
 for k, v in pairs(options) do

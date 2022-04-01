@@ -57,6 +57,11 @@ return packer.startup(function(use)
     use "L3MON4D3/LuaSnip"
     use "rafamadriz/friendly-snippets"
 
+    use "neovim/nvim-lspconfig"
+    use "williamboman/nvim-lsp-installer"
+    use "jose-elias-alvarez/null-ls.nvim"
+
+    use "lukas-reineke/indent-blankline.nvim"
     if PACKER_BOOTSTRAP then
         require("packer").sync()
     end
