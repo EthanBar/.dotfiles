@@ -23,6 +23,7 @@ local options = {
 }
 
 vim.g.ayucolor = "dark"
+-- vim.g.ayu_extended_palette = 1
 vim.cmd "colorscheme ayu"
 
 vim.indent_blankline_show_first_indent_level = false

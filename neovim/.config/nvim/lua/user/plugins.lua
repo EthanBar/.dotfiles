@@ -45,7 +45,7 @@ return packer.startup(function(use)
     use "nvim-lua/popup.nvim"
     use "nvim-lua/plenary.nvim"
     use "Luxed/ayu-vim"
-    
+
     -- CMP stuffs
     use "hrsh7th/nvim-cmp"
     use "hrsh7th/cmp-buffer"
@@ -54,14 +54,28 @@ return packer.startup(function(use)
     use "saadparwaiz1/cmp_luasnip"
     use "hrsh7th/cmp-nvim-lsp"
 
+    -- Snippets
     use "L3MON4D3/LuaSnip"
     use "rafamadriz/friendly-snippets"
 
+    -- LSP
     use "neovim/nvim-lspconfig"
     use "williamboman/nvim-lsp-installer"
     use "jose-elias-alvarez/null-ls.nvim"
 
     use "lukas-reineke/indent-blankline.nvim"
+
+    use "nvim-telescope/telescope.nvim"
+
+    -- Treesitter
+    use {
+        "nvim-treesitter/nvim-treesitter",
+        run = ":TSUpdate"
+    }
+
+    -- Statusline
+    use "kyazdani42/nvim-web-devicons"
+    use "nvim-lualine/lualine.nvim"
     if PACKER_BOOTSTRAP then
         require("packer").sync()
     end
