@@ -15,8 +15,8 @@ alias n="nvim"
 [ -f "/home/ebark/.ghcup/env" ] && source "/home/ebark/.ghcup/env" # ghcup-env
 
 # Set VIM as editor
-export VISUAL=vim
-export EDITOR=vim
+export VISUAL=nvim
+export EDITOR=nvim
 
 # asdf - Elixir
 . $HOME/.asdf/asdf.sh
