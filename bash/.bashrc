@@ -25,3 +25,4 @@ export EDITOR=nvim
 # Ignore duplicate histories
 HISTCONTROL=ignoredups
 
+PATH=$PATH:~/.local/bin

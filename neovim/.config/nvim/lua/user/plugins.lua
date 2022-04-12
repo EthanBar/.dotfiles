@@ -45,6 +45,7 @@ return packer.startup(function(use)
     use "nvim-lua/popup.nvim"
     use "nvim-lua/plenary.nvim"
     use "Luxed/ayu-vim"
+    use "windwp/nvim-autopairs"
 
     -- CMP stuffs
     use "hrsh7th/nvim-cmp"
@@ -76,6 +77,9 @@ return packer.startup(function(use)
     -- Statusline
     use "kyazdani42/nvim-web-devicons"
     use "nvim-lualine/lualine.nvim"
+
+    use "sbdchd/neoformat"
+
     if PACKER_BOOTSTRAP then
         require("packer").sync()
     end
