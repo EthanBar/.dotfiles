@@ -21,6 +21,7 @@ local options = {
     sidescrolloff = 8,
     background = "dark",
     colorcolumn = "80",         -- show character limit line
+    shortmess = "I"
 }
 
 -- Colorscheme

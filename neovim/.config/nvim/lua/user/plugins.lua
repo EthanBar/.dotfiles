@@ -78,8 +78,14 @@ return packer.startup(function(use)
     use "kyazdani42/nvim-web-devicons"
     use "nvim-lualine/lualine.nvim"
 
+    -- Formatting
     use "sbdchd/neoformat"
 
+    -- Bufferline
+    use "akinsho/bufferline.nvim"
+
+    -- Toggleterm
+    use "akinsho/toggleterm.nvim"
     if PACKER_BOOTSTRAP then
         require("packer").sync()
     end
