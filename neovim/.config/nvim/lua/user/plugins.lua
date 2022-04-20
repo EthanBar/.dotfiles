@@ -66,8 +66,9 @@ return packer.startup(function(use)
 
     use "lukas-reineke/indent-blankline.nvim"
 
+    -- Telescope
     use "nvim-telescope/telescope.nvim"
-
+    use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
     -- Treesitter
     use {
         "nvim-treesitter/nvim-treesitter",
@@ -86,6 +87,11 @@ return packer.startup(function(use)
 
     -- Toggleterm
     use "akinsho/toggleterm.nvim"
+
+    -- Tree
+    use {
+        'kyazdani42/nvim-tree.lua',
+    }
     if PACKER_BOOTSTRAP then
         require("packer").sync()
     end
