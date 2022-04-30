@@ -39,7 +39,7 @@ packer.init {
 }
 
 return packer.startup(function(use)
-
+    use 'lewis6991/impatient.nvim'
     -- Plugins go here
     use "wbthomason/packer.nvim"
     use "nvim-lua/popup.nvim"
@@ -92,6 +92,9 @@ return packer.startup(function(use)
     use {
         'kyazdani42/nvim-tree.lua',
     }
+
+    -- Diff
+    use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
     if PACKER_BOOTSTRAP then
         require("packer").sync()
     end

@@ -67,6 +67,10 @@ keymap("n", "<C-f>", ":Telescope find_files<CR>", opts)
 keymap("n", "<C-S-f>", ":Telescope live_grep<CR>", opts)
 
 keymap("n", "<leader>f", ":py3f /usr/share/clang/clang-format.py<cr>", {})
+keymap("n", "<leader>e", ":NvimTreeToggle<cr>", {})
+
+keymap("n", "<leader>g", ":DiffviewOpen<cr>", {})
+keymap("n", "<leader><S-g>", ":DiffviewClose<cr>", {})
 -- Terminal --
 -- Better terminal navigation
 -- keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)

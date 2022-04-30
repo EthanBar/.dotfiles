@@ -31,6 +31,7 @@ vim.cmd "colorscheme ayu"
 -- Show indent levels, but not the first
 vim.indent_blankline_show_first_indent_level = false
 vim.opt.shortmess:append "c"
+vim.opt.fillchars:append { eob = " " }
 
 for k, v in pairs(options) do
     vim.opt[k] = v
