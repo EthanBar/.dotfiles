@@ -8,7 +8,8 @@ PS1='[\u@\h \W]\$ '
 alias ls='ls --color=auto'
 alias racket='racket -i -p neil/sicp -l xrepl'
 alias n="nvim"
-
+alias polybar-r="polybar-msg cmd restart"
+alias cisco="/opt/cisco/anyconnect/bin/vpnui"
 #Am test
 
 # Haskell
