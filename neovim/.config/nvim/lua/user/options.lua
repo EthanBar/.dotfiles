@@ -42,4 +42,4 @@ vim.cmd [[set iskeyword+=-]]
 -- Don't continue comments
 vim.cmd("autocmd BufEnter * set formatoptions-=cro")
 vim.cmd("autocmd BufEnter * setlocal formatoptions-=cro")
-vim.cmd("autocmd BufWritePre *.js Neoformat")
+-- vim.cmd("autocmd BufWritePre *.js Neoformat")

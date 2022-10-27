@@ -40,6 +40,16 @@ packer.init {
 
 return packer.startup(function(use)
     use 'lewis6991/impatient.nvim'
+    use {
+  "folke/which-key.nvim",
+  config = function()
+    require("which-key").setup {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    }
+  end
+}
     -- Plugins go here
     use "wbthomason/packer.nvim"
     use "nvim-lua/popup.nvim"
@@ -89,9 +99,9 @@ return packer.startup(function(use)
     use "akinsho/toggleterm.nvim"
 
     -- Tree
-    use {
-        'kyazdani42/nvim-tree.lua',
-    }
+    -- use {
+    --     'kyazdani42/nvim-tree.lua',
+    -- }
 
     -- Diff
     use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }

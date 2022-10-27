@@ -1,7 +1,7 @@
 
 require("toggleterm").setup{
 	size = 20,
-	open_mapping = [[<leader>d]],
+	open_mapping = [[<leader><S-d>]],
 	hide_numbers = true,
 	shade_filetypes = {},
 	shade_terminals = true,

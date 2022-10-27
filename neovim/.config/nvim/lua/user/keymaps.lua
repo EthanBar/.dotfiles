@@ -73,6 +73,11 @@ keymap("n", "<leader>g", ":DiffviewOpen<cr>", opts)
 keymap("n", "<leader><S-g>", ":DiffviewClose<cr>", opts)
 
 keymap("n", "<leader>w", ":enew<bar>bd #<CR>", opts)
+
+-- Shift tab indents
+keymap("n", "<S-Tab>", "<<", opts)
+keymap("i", "<S-Tab>", "<C-d>", opts)
+
 -- Terminal --
 -- Better terminal navigation
 -- keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
