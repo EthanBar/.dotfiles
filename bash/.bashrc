@@ -1,8 +1,8 @@
 # If not running interactively, don't do anything
-[[ $- != *i* ]] && return
+# [[ $- != *i* ]] && return
 
 # Prompt
-PS1='[\u@\h \W]\$ '
+PS1='\[\033[32m\][\u@\h \W]\[\033[00m\]$ '
 
 # Alias
 alias ls='ls --color=auto'
@@ -10,6 +10,7 @@ alias racket='racket -i -p neil/sicp -l xrepl'
 alias n="nvim"
 alias polybar-r="polybar-msg cmd restart"
 alias cisco="/opt/cisco/anyconnect/bin/vpnui"
+alias discord='discord --no-sandbox'
 #Am test
 
 # Haskell
@@ -27,3 +28,7 @@ export EDITOR=nvim
 HISTCONTROL=ignoredups
 
 PATH=$PATH:~/.local/bin
+
+#if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
+#	export DISPLAY=:0
+#fi
