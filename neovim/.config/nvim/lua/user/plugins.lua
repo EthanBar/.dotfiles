@@ -44,7 +44,9 @@ return packer.startup(function(use)
     use "wbthomason/packer.nvim"
     use "nvim-lua/popup.nvim"
     use "nvim-lua/plenary.nvim"
-    use "Luxed/ayu-vim"
+    use "FuDesign2008/ayu-vim"
+    use 'bluz71/vim-nightfly-colors'
+
     use "windwp/nvim-autopairs"
 
     -- CMP stuffs

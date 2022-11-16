@@ -25,8 +25,9 @@ local options = {
 }
 
 -- Colorscheme
-vim.g.ayucolor = "dark"
-vim.cmd "colorscheme ayu"
+-- vim.g.ayucolor = "dark"
+-- vim.cmd "colorscheme ayu"
+vim.cmd [[colorscheme nightfly]]
 
 -- Show indent levels, but not the first
 vim.indent_blankline_show_first_indent_level = false
