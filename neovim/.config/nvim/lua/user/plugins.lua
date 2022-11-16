@@ -40,16 +40,6 @@ packer.init {
 
 return packer.startup(function(use)
     use 'lewis6991/impatient.nvim'
-    use {
-  "folke/which-key.nvim",
-  config = function()
-    require("which-key").setup {
-      -- your configuration comes here
-      -- or leave it empty to use the default settings
-      -- refer to the configuration section below
-    }
-  end
-}
     -- Plugins go here
     use "wbthomason/packer.nvim"
     use "nvim-lua/popup.nvim"
