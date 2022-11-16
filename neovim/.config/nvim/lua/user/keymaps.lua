@@ -1,7 +1,5 @@
 local opts = { noremap = true, silent = true }
 
-local term_opts = { silent = true }
-
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
 
@@ -76,7 +74,9 @@ keymap("n", "<leader>w", ":enew<bar>bd #<CR>", opts)
 
 -- Shift tab indents
 keymap("n", "<S-Tab>", "<<", opts)
-keymap("i", "<S-Tab>", "<C-d>", opts)
+
+-- Close 'tab'
+keymap("n", "<leader>q", ":bd<cr>", opts)
 
 -- Terminal --
 -- Better terminal navigation

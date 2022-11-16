@@ -77,6 +77,40 @@ return packer.startup(function(use)
         run = ":TSUpdate"
     }
 
+    use({
+        "folke/noice.nvim",
+        config = function()
+            require("noice").setup({
+                routes = {
+                    {
+                        filter = {
+                            event = "msg_show",
+                            kind = "",
+                            find = "written",
+                        },
+                        opts = { skip = true },
+                    },
+                },
+                lsp = {
+                    -- override markdown rendering so that **cmp** and other plugins use **Treesitter**
+                    override = {
+                        ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
+                        ["vim.lsp.util.stylize_markdown"] = true,
+                        ["cmp.entry.get_documentation"] = true,
+                    },
+                },
+            })
+        end,
+        requires = {
+            -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+            "MunifTanjim/nui.nvim",
+            -- OPTIONAL:
+            --   `nvim-notify` is only needed, if you want to use the notification view.
+            --   If not available, we use `mini` as the fallback
+            "rcarriga/nvim-notify",
+        }
+    })
+
     -- Statusline
     use "kyazdani42/nvim-web-devicons"
     use "nvim-lualine/lualine.nvim"
@@ -90,6 +124,17 @@ return packer.startup(function(use)
     -- Toggleterm
     use "akinsho/toggleterm.nvim"
 
+    use {
+        "folke/trouble.nvim",
+        requires = "kyazdani42/nvim-web-devicons",
+        config = function()
+            require("trouble").setup {
+                -- your configuration comes here
+                -- or leave it empty to use the default settings
+                -- refer to the configuration section below
+            }
+        end
+    }
     -- Tree
     -- use {
     --     'kyazdani42/nvim-tree.lua',
