@@ -139,6 +139,7 @@ return packer.startup(function(use)
     -- use {
     --     'kyazdani42/nvim-tree.lua',
     -- }
+    use "tikhomirov/vim-glsl"
 
     -- Diff
     use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
