@@ -40,6 +40,7 @@ packer.init {
 
 return packer.startup(function(use)
     use 'lewis6991/impatient.nvim'
+    use 'farmergreg/vim-lastplace'
     -- Plugins go here
     use "wbthomason/packer.nvim"
     use "nvim-lua/popup.nvim"
@@ -58,8 +59,8 @@ return packer.startup(function(use)
     use "hrsh7th/cmp-nvim-lsp"
 
     -- Snippets
-    use "L3MON4D3/LuaSnip"
-    use "rafamadriz/friendly-snippets"
+    -- use "L3MON4D3/LuaSnip"
+    -- use "rafamadriz/friendly-snippets"
 
     -- LSP
     use "neovim/nvim-lspconfig"
@@ -76,6 +77,8 @@ return packer.startup(function(use)
         "nvim-treesitter/nvim-treesitter",
         run = ":TSUpdate"
     }
+    use "windwp/nvim-ts-autotag"
+    require('nvim-ts-autotag').setup()
 
     use({
         "folke/noice.nvim",
