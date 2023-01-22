@@ -74,9 +74,11 @@ keymap("n", "<leader>w", ":enew<bar>bd #<CR>", opts)
 
 -- Shift tab indents
 keymap("n", "<S-Tab>", "<<", opts)
+keymap("i", "<S-Tab>", "<C-d>", opts)
 
 -- Close 'tab'
 keymap("n", "<leader>q", ":bd<cr>", opts)
+
 
 -- Terminal --
 -- Better terminal navigation

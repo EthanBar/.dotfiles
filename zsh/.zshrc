@@ -25,6 +25,7 @@ alias n="nvim"
 alias polybar-r="polybar-msg cmd restart"
 alias cisco="/opt/cisco/anyconnect/bin/vpnui"
 alias discord='discord --no-sandbox'
+alias gputop='watch -n 1 nvidia-smi'
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -85,7 +86,7 @@ alias discord='discord --no-sandbox'
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man-pages zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git colored-man-pages zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
