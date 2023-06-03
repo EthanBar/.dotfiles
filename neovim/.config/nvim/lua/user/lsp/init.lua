@@ -41,10 +41,10 @@ lspconfig.util.default_config = vim.tbl_extend(
 -- 3. Loop through all of the installed servers and set it up via lspconfig
 for _, server in ipairs(lsp_installer.get_installed_servers()) do
     local opts = {}
-    if server.name == "sumneko_lua" then
-        local sumneko_opts = require("user.lsp.settings.sumneko_lua")
-        opts = vim.tbl_deep_extend("force", sumneko_opts, opts)
-    end
+    --if server.name == "sumneko_lua" then
+    --    local sumneko_opts = require("user.lsp.settings.sumneko_lua")
+    --    opts = vim.tbl_deep_extend("force", sumneko_opts, opts)
+    --end
     if server.name == "eslint" then
         local eslint_opts = require("user.lsp.settings.eslint")
         opts = vim.tbl_deep_extend("force", eslint_opts, opts)

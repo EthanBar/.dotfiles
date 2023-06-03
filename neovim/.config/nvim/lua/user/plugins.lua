@@ -59,7 +59,7 @@ return packer.startup(function(use)
     use "hrsh7th/cmp-nvim-lsp"
 
     -- Snippets
-    -- use "L3MON4D3/LuaSnip"
+    use "L3MON4D3/LuaSnip"
     -- use "rafamadriz/friendly-snippets"
 
     -- LSP
@@ -127,6 +127,10 @@ return packer.startup(function(use)
     -- Toggleterm
     use "akinsho/toggleterm.nvim"
 
+    -- Comment toggler
+    -- use "terrortylor/nvim-comment"
+    -- require('nvim_comment').setup({comment_empty = false})
+
     use {
         "folke/trouble.nvim",
         requires = "kyazdani42/nvim-web-devicons",
@@ -143,6 +147,8 @@ return packer.startup(function(use)
     --     'kyazdani42/nvim-tree.lua',
     -- }
     use "tikhomirov/vim-glsl"
+    
+    use "github/copilot.vim"
 
     -- Diff
     use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }

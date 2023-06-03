@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  LuaSnip = {
+    loaded = true,
+    path = "/home/ebark/.local/share/nvim/site/pack/packer/start/LuaSnip",
+    url = "https://github.com/L3MON4D3/LuaSnip"
+  },
   ["ayu-vim"] = {
     loaded = true,
     path = "/home/ebark/.local/share/nvim/site/pack/packer/start/ayu-vim",
@@ -109,6 +114,11 @@ _G.packer_plugins = {
     path = "/home/ebark/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["copilot.vim"] = {
+    loaded = true,
+    path = "/home/ebark/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    url = "https://github.com/github/copilot.vim"
+  },
   ["diffview.nvim"] = {
     loaded = true,
     path = "/home/ebark/.local/share/nvim/site/pack/packer/start/diffview.nvim",
@@ -135,7 +145,7 @@ _G.packer_plugins = {
     url = "https://github.com/sbdchd/neoformat"
   },
   ["noice.nvim"] = {
-    config = { "\27LJ\2\n«\2\0\0\6\0\14\0\0196\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\b\0004\3\3\0005\4\4\0005\5\3\0=\5\5\0045\5\6\0=\5\a\4>\4\1\3=\3\t\0025\3\v\0005\4\n\0=\4\f\3=\3\r\2B\0\2\1K\0\1\0\blsp\roverride\1\0\0\1\0\3 cmp.entry.get_documentation\2\"vim.lsp.util.stylize_markdown\0021vim.lsp.util.convert_input_to_markdown_lines\2\vroutes\1\0\0\topts\1\0\1\tskip\2\vfilter\1\0\0\1\0\3\tfind\fwritten\nevent\rmsg_show\tkind\5\nsetup\nnoice\frequire\0" },
+    config = { "\27LJ\2\n«\2\0\0\6\0\14\0\0196\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\b\0004\3\3\0005\4\4\0005\5\3\0=\5\5\0045\5\6\0=\5\a\4>\4\1\3=\3\t\0025\3\v\0005\4\n\0=\4\f\3=\3\r\2B\0\2\1K\0\1\0\blsp\roverride\1\0\0\1\0\3\"vim.lsp.util.stylize_markdown\0021vim.lsp.util.convert_input_to_markdown_lines\2 cmp.entry.get_documentation\2\vroutes\1\0\0\topts\1\0\1\tskip\2\vfilter\1\0\0\1\0\3\tfind\fwritten\tkind\5\nevent\rmsg_show\nsetup\nnoice\frequire\0" },
     loaded = true,
     path = "/home/ebark/.local/share/nvim/site/pack/packer/start/noice.nvim",
     url = "https://github.com/folke/noice.nvim"
@@ -159,6 +169,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ebark/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-comment"] = {
+    loaded = true,
+    path = "/home/ebark/.local/share/nvim/site/pack/packer/start/nvim-comment",
+    url = "https://github.com/terrortylor/nvim-comment"
   },
   ["nvim-lsp-installer"] = {
     loaded = true,
@@ -244,14 +259,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: noice.nvim
-time([[Config for noice.nvim]], true)
-try_loadstring("\27LJ\2\n«\2\0\0\6\0\14\0\0196\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\b\0004\3\3\0005\4\4\0005\5\3\0=\5\5\0045\5\6\0=\5\a\4>\4\1\3=\3\t\0025\3\v\0005\4\n\0=\4\f\3=\3\r\2B\0\2\1K\0\1\0\blsp\roverride\1\0\0\1\0\3 cmp.entry.get_documentation\2\"vim.lsp.util.stylize_markdown\0021vim.lsp.util.convert_input_to_markdown_lines\2\vroutes\1\0\0\topts\1\0\1\tskip\2\vfilter\1\0\0\1\0\3\tfind\fwritten\nevent\rmsg_show\tkind\5\nsetup\nnoice\frequire\0", "config", "noice.nvim")
-time([[Config for noice.nvim]], false)
 -- Config for: trouble.nvim
 time([[Config for trouble.nvim]], true)
 try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
 time([[Config for trouble.nvim]], false)
+-- Config for: noice.nvim
+time([[Config for noice.nvim]], true)
+try_loadstring("\27LJ\2\n«\2\0\0\6\0\14\0\0196\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\b\0004\3\3\0005\4\4\0005\5\3\0=\5\5\0045\5\6\0=\5\a\4>\4\1\3=\3\t\0025\3\v\0005\4\n\0=\4\f\3=\3\r\2B\0\2\1K\0\1\0\blsp\roverride\1\0\0\1\0\3\"vim.lsp.util.stylize_markdown\0021vim.lsp.util.convert_input_to_markdown_lines\2 cmp.entry.get_documentation\2\vroutes\1\0\0\topts\1\0\1\tskip\2\vfilter\1\0\0\1\0\3\tfind\fwritten\tkind\5\nevent\rmsg_show\nsetup\nnoice\frequire\0", "config", "noice.nvim")
+time([[Config for noice.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
